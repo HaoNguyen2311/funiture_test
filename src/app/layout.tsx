@@ -1,7 +1,10 @@
 import { Manrope, Roboto } from "next/font/google";
 import "antd/dist/reset.css";
 import "./styles/globals.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -25,6 +28,7 @@ export default function RootLayout({
       <body className={`${manrope.className} ${roboto.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
