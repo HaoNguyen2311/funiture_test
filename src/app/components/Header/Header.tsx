@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="header-section">
       <div className="container">
-        <Image src={LogoImage} alt="Logo Image" />
+        <Image className="logo-image" src={LogoImage} alt="Logo Image" />
         <div className="navigate-section">
           <a href="">ABOUT US</a>
           <a href="">CONTACT US</a>

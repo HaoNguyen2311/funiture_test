@@ -11,7 +11,7 @@ import ReadingImage from "@public/reading_room.png";
 
 import "./Title.scss";
 
-const IMAGE_LIST = [BedRoomImage, SofaImage, ReadingImage];
+const IMAGE_LIST = [SofaImage, BedRoomImage, ReadingImage];
 
 const Title = () => {
   const percent = 100 / IMAGE_LIST.length;
@@ -28,20 +28,15 @@ const Title = () => {
     cssEase: "cubic-bezier(0.23, 1, 0.32, 1)",
     beforeChange: function (oldIndex: number, newIndex: number) {
       if (oldIndex === IMAGE_LIST.length - 1 && newIndex === 0) {
-        console.log(1);
-
         setIndexSubImage(0);
         setWidth(percent);
         return;
       }
       if (oldIndex === 0 && newIndex === IMAGE_LIST.length - 1) {
-        console.log(2);
-
         setIndexSubImage(IMAGE_LIST.length - 1);
         setWidth(100);
         return;
       }
-      console.log(3);
       setIndexSubImage(newIndex);
       setWidth(width + percent);
     },
@@ -68,14 +63,14 @@ const Title = () => {
         </div>
       </div>
       <div className="description">
-        <h1>REFINED FURNITURE REDEFINED</h1>
+        <h1>
+          REFINED FURNITURE <br /> REDEFINED
+        </h1>
         <button>DISCOVER NOW</button>
       </div>
       <Slider className="slider-test" {...settings}>
         {IMAGE_LIST.map((image, index) => (
-          <div key={index}>
-            <Image alt="Image" src={image} />
-          </div>
+          <Image key={index} className="slider-image" alt="Image" src={image} />
         ))}
       </Slider>
     </div>

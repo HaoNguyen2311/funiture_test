@@ -1,14 +1,17 @@
-@import "../../styles/variable";
+@import "@/app/styles/variable";
 
 .header-section {
-  //   background: transparent;
   position: sticky;
   top: 0;
-  background: black;
   position: fixed;
   background: transparent;
   width: 100%;
   z-index: 1;
+  .logo-image {
+    width: 216px;
+    aspect-ratio: 216/56;
+    height: auto;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -37,12 +40,12 @@
 
 @media screen and (max-width: $tablet-max) {
   .header-section {
-    .container {
-      padding: 8px 32px;
-    }
-    img {
+    .logo-image {
       width: 124px;
       aspect-ratio: 124/32;
+    }
+    .container {
+      padding: 8px 32px;
     }
     .navigate-section {
       gap: 32px;
@@ -94,6 +97,10 @@
       gap: 8px;
       p {
         margin-bottom: 0;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
       }
       span {
         font-size: 24px;
@@ -155,6 +162,10 @@
       }
       .rights {
         text-align: center;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 22px;
       }
     }
   }
