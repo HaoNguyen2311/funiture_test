@@ -1,7 +1,5 @@
 "use client";
 import Image from "next/image";
-import LogoImage from "@public/logo_image.svg";
-import "./Header.scss";
 import { Button, Drawer } from "antd";
 import { useState } from "react";
 import {
@@ -9,6 +7,10 @@ import {
   CloseOutlined,
   PhoneFilled,
 } from "@ant-design/icons";
+
+import LogoImage from "@public/logo_image.svg";
+
+import "./Header.scss";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -20,6 +22,7 @@ const Header = () => {
   const onClose = () => {
     setOpen(false);
   };
+
   return (
     <div className="header-section">
       <div className="container">

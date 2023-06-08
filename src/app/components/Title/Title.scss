@@ -6,7 +6,7 @@
     position: absolute;
     bottom: 52px;
     right: 152px;
-    z-index: 3;
+    z-index: 2;
     img {
       height: 107px;
       width: auto;
@@ -40,7 +40,7 @@
       }
     }
   }
-  .slider-test {
+  .slider-title {
     .slick-slide {
       transition: transform 500ms ease-in-out;
       transform: scale(1);
@@ -79,7 +79,7 @@
   }
   .description {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-100%);

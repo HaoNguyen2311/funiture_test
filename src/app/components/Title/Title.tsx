@@ -5,18 +5,19 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
-import BedRoomImage from "@public/bed_room_image.png";
-import SofaImage from "@public/sofa_image.png";
-import ReadingImage from "@public/reading_room.png";
+import BedRoomImage from "@public/Title/bed_room_image.png";
+import SofaImage from "@public/Title/sofa_image.png";
+import ReadingImage from "@public/Title/reading_room.png";
 
 import "./Title.scss";
 
 const IMAGE_LIST = [SofaImage, BedRoomImage, ReadingImage];
+const PERCENT_ELEMENT = 100 / IMAGE_LIST.length;
 
 const Title = () => {
-  const percent = 100 / IMAGE_LIST.length;
-  const [width, setWidth] = useState(percent);
+  const [width, setWidth] = useState(PERCENT_ELEMENT);
   const [indexSubImage, setIndexSubImage] = useState(0);
+
   const settings = {
     dots: false,
     speed: 600,
@@ -29,7 +30,7 @@ const Title = () => {
     beforeChange: function (oldIndex: number, newIndex: number) {
       if (oldIndex === IMAGE_LIST.length - 1 && newIndex === 0) {
         setIndexSubImage(0);
-        setWidth(percent);
+        setWidth(PERCENT_ELEMENT);
         return;
       }
       if (oldIndex === 0 && newIndex === IMAGE_LIST.length - 1) {
@@ -38,7 +39,7 @@ const Title = () => {
         return;
       }
       setIndexSubImage(newIndex);
-      setWidth(width + percent);
+      setWidth(width + PERCENT_ELEMENT);
     },
   };
 
@@ -68,7 +69,7 @@ const Title = () => {
         </h1>
         <button>DISCOVER NOW</button>
       </div>
-      <Slider className="slider-test" {...settings}>
+      <Slider className="slider-tab-items" {...settings}>
         {IMAGE_LIST.map((image, index) => (
           <Image key={index} className="slider-image" alt="Image" src={image} />
         ))}
