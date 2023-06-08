@@ -1,0 +1,119 @@
+@import "@/app/styles/variable";
+
+.our-mission-section {
+  background-image: url("../../../../public/OurMission/background_our_mission.png");
+  background-size: cover;
+  .container {
+    max-width: 1920px;
+    margin-inline: auto;
+    padding: 168px 154px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    p {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+    span {
+      color: #b9a38a;
+    }
+  }
+  .details {
+    display: flex;
+    gap: 110px;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      flex: 1.46;
+    }
+    p {
+      font-size: 13px;
+      line-height: 17px;
+    }
+    .our-gold {
+      align-self: flex-end;
+      flex: 1;
+    }
+    .our-gold-mobile {
+      display: none;
+    }
+    .our-approach {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .our-mission-section {
+    .container {
+      padding: 72px 32px 112px;
+    }
+    h2 {
+      margin-bottom: 42px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .details {
+      display: flex;
+      gap: 45px;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      p {
+        font-size: 13px;
+        line-height: 17px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phone-max) {
+  .our-mission-section {
+    .container {
+      padding: 60px 42px 56px;
+    }
+    h2 {
+      margin-bottom: 42px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .details {
+      display: flex;
+      gap: 0px;
+      justify-content: center;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 56px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .our-gold {
+        display: none;
+      }
+      .our-gold-mobile {
+        display: block;
+      }
+      .our-approach {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
