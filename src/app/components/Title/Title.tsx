@@ -48,7 +48,7 @@ const Title = () => {
   } as React.CSSProperties;
 
   return (
-    <div className="title-section">
+    <div className="title-section" id="title">
       <div className="sub-image">
         <Image alt="Image" src={IMAGE_LIST[indexSubImage]} />
         <div className="step-bar">

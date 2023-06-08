@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button, Drawer } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   AlignRightOutlined,
   CloseOutlined,
@@ -9,11 +9,22 @@ import {
 } from "@ant-design/icons";
 
 import LogoImage from "@public/logo_image.svg";
+import LogoImageBlack from "@public/logo_image_black.svg";
 
 import "./Header.scss";
 
+const debounce = (func: () => void, delay: number) => {
+  let timeoutId: undefined | ReturnType<typeof setTimeout> = undefined;
+
+  return function () {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(func, delay);
+  };
+};
+
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [isChangeHeader, setIsChangeHeader] = useState(false);
 
   const showDrawer = () => {
     setOpen(true);
@@ -23,10 +34,35 @@ const Header = () => {
     setOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = debounce(() => {
+      const secondParagraph = document.getElementById("title");
+      const rect = secondParagraph?.getBoundingClientRect();
+
+      if (rect && rect.top < window.innerHeight && rect.bottom >= 0) {
+        setIsChangeHeader(false);
+        console.log(1);
+      } else {
+        setIsChangeHeader(true);
+        console.log(2);
+      }
+    }, 100);
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="header-section">
+    <div className={`header-section ${isChangeHeader ? "white-header" : ""}`}>
       <div className="container">
-        <Image className="logo-image" src={LogoImage} alt="Logo Image" />
+        {isChangeHeader ? (
+          <Image className="logo-image" src={LogoImageBlack} alt="Logo Image" />
+        ) : (
+          <Image className="logo-image" src={LogoImage} alt="Logo Image" />
+        )}
         <div className="navigate-section">
           <a href="">ABOUT US</a>
           <a href="">CONTACT US</a>

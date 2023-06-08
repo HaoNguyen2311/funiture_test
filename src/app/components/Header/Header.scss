@@ -37,6 +37,18 @@
     display: none;
   }
 }
+.white-header {
+  background-color: white;
+  color: #414241;
+  .navigate-section {
+    a {
+      color: #414241;
+    }
+  }
+  .container {
+    border-bottom: 0.5px solid rgba(#414241, 0.5);
+  }
+}
 
 @media screen and (max-width: $tablet-max) {
   .header-section {
