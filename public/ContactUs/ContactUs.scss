@@ -1,0 +1,195 @@
+@import "@/app/styles/variable";
+
+.contact-us-section {
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: 152px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 161px;
+  h2 {
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 121px;
+    letter-spacing: 0.01em;
+    color: #4d4d4f;
+    mix-blend-mode: normal;
+    margin-bottom: 57px;
+    span {
+      font-style: italic;
+    }
+  }
+  .title-section {
+    max-width: 684px;
+    flex: 1;
+    p {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.03em;
+      color: #414241;
+      margin-bottom: 0;
+    }
+  }
+  .form-section {
+    flex: 1;
+    align-self: flex-end;
+    .line {
+      max-width: 519px;
+      height: 1px;
+      background-color: #4d4d4f;
+      width: 100%;
+    }
+    .submit-btn {
+      background: transparent;
+      border: none;
+      height: auto;
+      padding: 24px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+      p {
+        margin: 0;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #414241;
+      }
+    }
+    .discount-text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+      color: #414241;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+  }
+  input {
+    border: none;
+    padding: 24px 18px;
+  }
+  ::placeholder {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #414241;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .contact-us-section {
+    padding-inline: 32px;
+    margin-bottom: 60px;
+    h2 {
+      font-size: 34px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+    .title-section {
+      max-width: 307px;
+      flex: 1;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .form-section {
+      .submit-btn {
+        background: transparent;
+        border: none;
+        height: auto;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        p {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+      .discount-text {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 12px;
+      }
+    }
+    input {
+      border: none;
+      padding: 14px 20px;
+    }
+    ::placeholder {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-max) {
+  .contact-us-section {
+    padding-inline: 16px;
+    margin-bottom: 56px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    h2 {
+      font-size: 44px;
+      line-height: 49px;
+      margin-bottom: 24px;
+    }
+    .title-section {
+      max-width: unset;
+      flex: 1;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .form-section {
+      align-self: center;
+      width: 100%;
+      .line {
+        max-width: unset;
+      }
+      .submit-btn {
+        background: transparent;
+        border: none;
+        height: auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        p {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+      .discount-text {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 16px;
+      }
+    }
+    input {
+      border: none;
+      padding: 12px 20px;
+    }
+    ::placeholder {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
