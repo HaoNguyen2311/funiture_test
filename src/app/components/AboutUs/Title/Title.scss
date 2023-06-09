@@ -1,0 +1,218 @@
+@import "@/app/styles/variable";
+
+.title-contact-us {
+  padding-top: 273px;
+  .content {
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: 151px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+      color: #414241;
+      margin-bottom: 20px;
+      max-width: 386px;
+      align-self: flex-end;
+    }
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 131px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #414241;
+    margin-bottom: 0;
+    span {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: #414241;
+    }
+  }
+
+  .slider-section {
+    position: relative;
+  }
+  .sub-image {
+    position: absolute;
+    top: 48px;
+    right: 345px;
+    z-index: 2;
+
+    .step-bar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      p {
+        margin-bottom: 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 53px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: white;
+      }
+    }
+  }
+  .progress-bar {
+    background-color: gray;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 71px;
+    div {
+      width: var(--width);
+      height: 1px;
+      background: white;
+    }
+  }
+  .slider-title {
+    .slick-slide {
+      transition: transform 500ms ease-in-out;
+      transform: scale(1);
+      transition-delay: 300ms;
+      img {
+        height: 100vh;
+        object-fit: cover !important;
+        display: block !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .title-contact-us {
+    padding-top: 112px;
+    .content {
+      padding-inline: 32px;
+      margin-bottom: 32px;
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #414241;
+        margin-bottom: 20px;
+        max-width: 386px;
+        align-self: flex-end;
+      }
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 55px;
+      span {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .sub-image {
+      top: 16px;
+      right: 330px;
+      .step-bar {
+        gap: 8px;
+        p {
+          font-size: 20px;
+          line-height: 22px;
+        }
+      }
+    }
+    .progress-bar {
+      background-color: gray;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      width: 77px;
+      div {
+        width: var(--width);
+        height: 1px;
+        background: white;
+      }
+    }
+    .slider-title {
+      .slick-slide {
+        transition: transform 500ms ease-in-out;
+        transform: scale(1);
+        transition-delay: 300ms;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover !important;
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phone-max) {
+  .title-contact-us {
+    padding-top: 80px;
+    .content {
+      padding-inline: 16px;
+      margin-bottom: 40px;
+      flex-direction: column;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 16px;
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        align-self: self-start;
+        margin-bottom: 0;
+      }
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+      span {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .sub-image {
+      right: 16px;
+      .step-bar {
+        gap: 8px;
+        p {
+          font-size: 32px;
+          line-height: 35px;
+        }
+      }
+    }
+    .progress-bar {
+      background-color: gray;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      width: 77px;
+      div {
+        width: var(--width);
+        height: 1px;
+        background: white;
+      }
+    }
+    .slider-title {
+      .slick-slide {
+        transition: transform 500ms ease-in-out;
+        transform: scale(1);
+        transition-delay: 300ms;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover !important;
+          display: block !important;
+        }
+      }
+    }
+  }
+}
