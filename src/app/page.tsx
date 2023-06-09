@@ -1,10 +1,9 @@
 "use client";
 
-import OriginStandard from "./components/OriginStandard/OriginStandard";
-import OurMission from "./components/OurMission/OurMission";
-import OurCatalog from "./components/OurCatalog/OurCatalog";
-import Title from "./components/Title/Title";
-import ContactUs from "@public/ContactUs/ContactUs";
+import OriginStandard from "./components/HomePage/OriginStandard/OriginStandard";
+import OurMission from "./components/HomePage/OurMission/OurMission";
+import OurCatalog from "./components/HomePage/OurCatalog/OurCatalog";
+import Title from "./components/HomePage/Title/Title";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <OriginStandard />
       <OurMission />
       <OurCatalog />
-      <ContactUs />
     </div>
   );
 }

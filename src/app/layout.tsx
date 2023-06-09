@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ContactUs from "@/app/components/ContactUs/ContactUs";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${manrope.className} ${roboto.variable}`}>
         <Header />
         {children}
+        <ContactUs />
         <Footer />
       </body>
     </html>
