@@ -27,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.className} ${roboto.variable}`}>
-        <Header />
         {children}
         <ContactUs />
         <Footer />

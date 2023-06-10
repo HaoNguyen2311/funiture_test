@@ -12,6 +12,7 @@ import LogoImage from "@public/logo_image.svg";
 import LogoImageBlack from "@public/logo_image_black.svg";
 
 import "./Header.scss";
+import Link from "next/link";
 
 const debounce = (func: () => void, delay: number) => {
   let timeoutId: undefined | ReturnType<typeof setTimeout> = undefined;
@@ -22,9 +23,9 @@ const debounce = (func: () => void, delay: number) => {
   };
 };
 
-const Header = () => {
+const Header = ({ isTransparent }: { isTransparent: boolean }) => {
   const [open, setOpen] = useState(false);
-  const [isChangeHeader, setIsChangeHeader] = useState(false);
+  const [isChangeHeader, setIsChangeHeader] = useState(isTransparent);
 
   const showDrawer = () => {
     setOpen(true);
@@ -59,14 +60,22 @@ const Header = () => {
     <div className={`header-section ${isChangeHeader ? "white-header" : ""}`}>
       <div className="container">
         {isChangeHeader ? (
-          <Image className="logo-image" src={LogoImageBlack} alt="Logo Image" />
+          <Link href=".">
+            <Image
+              className="logo-image"
+              src={LogoImageBlack}
+              alt="Logo Image"
+            />
+          </Link>
         ) : (
-          <Image className="logo-image" src={LogoImage} alt="Logo Image" />
+          <Link href=".">
+            <Image className="logo-image" src={LogoImage} alt="Logo Image" />
+          </Link>
         )}
         <div className="navigate-section">
-          <a href="">ABOUT US</a>
-          <a href="">CONTACT US</a>
-          <a href="">DOWNLOAD CATALOG</a>
+          <Link href="/about-us">ABOUT US</Link>
+          <Link href="">CONTACT US</Link>
+          <Link href="">DOWNLOAD CATALOG</Link>
         </div>
         <Button className="menu-btn" type="text" onClick={showDrawer}>
           <AlignRightOutlined />
