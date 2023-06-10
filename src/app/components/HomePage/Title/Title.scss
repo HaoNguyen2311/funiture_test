@@ -84,6 +84,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
     width: 100%;
+    max-width: unset;
     h1 {
       font-size: 72px;
       line-height: 98px;
@@ -94,6 +95,9 @@
       mix-blend-mode: normal;
       margin-bottom: 32px;
       font-weight: 400;
+      span {
+        font-style: italic;
+      }
     }
     button {
       display: flex;
@@ -159,6 +163,7 @@
   .title-section {
     .sub-image {
       bottom: 16px;
+      right: 16px;
       img {
         height: 79px;
         width: auto;
@@ -174,6 +179,7 @@
       }
     }
     .description {
+      max-width: 272px;
       h1 {
         font-size: 40px;
         line-height: 55px;

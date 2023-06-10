@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import LeftArrow from "@public/left_arrow.svg";
+import RightArrow from "@public/right_arrow.svg";
 
 import BedRoomImage from "@public/Title/bed_room_image.png";
 import SofaImage from "@public/Title/sofa_image.png";
@@ -23,8 +24,8 @@ const Title = () => {
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <RightOutlined />,
-    prevArrow: <LeftOutlined />,
+    nextArrow: <Image src={RightArrow} alt="Right Arrow Image" />,
+    prevArrow: <Image src={LeftArrow} alt="Left Arrow Image" />,
     fade: true,
     cssEase: "cubic-bezier(0.23, 1, 0.32, 1)",
     beforeChange: function (oldIndex: number, newIndex: number) {
@@ -65,7 +66,8 @@ const Title = () => {
       </div>
       <div className="description">
         <h1>
-          REFINED FURNITURE <br /> REDEFINED
+          REFINED FURNITURE <br />
+          <span>REDEFINED</span>
         </h1>
         <button>DISCOVER NOW</button>
       </div>

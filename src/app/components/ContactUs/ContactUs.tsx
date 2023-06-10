@@ -8,7 +8,7 @@ const ContactUs = () => {
     <div className="contact-us-section">
       <div className="title-section">
         <h2>
-          <span>Elevate</span> Your Living Space
+          <span>ELEVATE</span> YOUR LIVING SPACE
         </h2>
         <p>
           Whether you&apos;re looking for a sleek modern aesthetic, or something

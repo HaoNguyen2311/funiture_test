@@ -42,10 +42,8 @@ const Header = ({ isTransparent }: { isTransparent: boolean }) => {
 
       if (rect && rect.top < window.innerHeight && rect.bottom >= 0) {
         setIsChangeHeader(false);
-        console.log(1);
       } else {
         setIsChangeHeader(true);
-        console.log(2);
       }
     }, 100);
 

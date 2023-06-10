@@ -13,6 +13,7 @@
     p {
       font-weight: 300;
       font-size: 16px;
+      font-family: var(--font-roboto);
       line-height: 22px;
       letter-spacing: 0.03em;
       color: #414241;
@@ -29,6 +30,15 @@
     text-transform: uppercase;
     color: #414241;
     margin-bottom: 0;
+    .italic-text {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 96px;
+      line-height: 131px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #414241;
+    }
     span {
       font-weight: 500;
       font-size: 32px;
@@ -115,6 +125,10 @@
         font-size: 16px;
         line-height: 22px;
       }
+      .italic-text {
+        font-size: 40px;
+        line-height: 55px;
+      }
     }
     .sub-image {
       top: 16px;
@@ -180,6 +194,10 @@
       span {
         font-size: 16px;
         line-height: 22px;
+      }
+      .italic-text {
+        font-size: 32px;
+        line-height: 44px;
       }
     }
     .sub-image {

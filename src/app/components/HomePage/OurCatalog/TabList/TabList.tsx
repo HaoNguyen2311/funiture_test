@@ -1,8 +1,7 @@
 import { Tabs } from "antd";
 import Image from "next/image";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import Slider from "react-slick";
-import { LegacyRef, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import ChairImage from "@public/OurCatalog/chair.png";
 import ChairBlurImage from "@public/OurCatalog/chair_blur.png";
@@ -12,6 +11,8 @@ import StoolImage from "@public/OurCatalog/stool.png";
 import StoolBlurImage from "@public/OurCatalog/stool_blur.png";
 import PencilImage from "@public/OurCatalog/pencil.svg";
 import SwatchImage from "@public/OurCatalog/color-swatch.svg";
+import LeftArrow from "@public/left_arrow.svg";
+import RightArrow from "@public/right_arrow.svg";
 
 import "./TabList.scss";
 
@@ -37,8 +38,8 @@ const TabList = () => {
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <RightOutlined />,
-    prevArrow: <LeftOutlined />,
+    nextArrow: <Image src={RightArrow} alt="Right Arrow Image" />,
+    prevArrow: <Image src={LeftArrow} alt="Left Arrow Image" />,
     fade: true,
     cssEase: "cubic-bezier(0.23, 1, 0.32, 1)",
     beforeChange: function (oldIndex: number, newIndex: number) {
@@ -98,10 +99,10 @@ const TabList = () => {
         <div className="line"></div>
         <div className="size-material">
           <button onClick={handleGoPrev} className="left-arrow">
-            <LeftOutlined />
+            <Image src={LeftArrow} alt="Right Arrow Image" />
           </button>
           <button onClick={handleGoNext} className="right-arrow">
-            <RightOutlined />
+            <Image src={RightArrow} alt="Right Arrow Image" />
           </button>
           <div className="common-row">
             <Image src={PencilImage} alt="Pencil Image" />

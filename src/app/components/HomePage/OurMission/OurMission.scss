@@ -35,8 +35,12 @@
       flex: 1.46;
     }
     p {
-      font-size: 13px;
-      line-height: 17px;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      font-family: var(--font-roboto);
+      font-weight: 300;
     }
     .our-gold {
       align-self: flex-end;

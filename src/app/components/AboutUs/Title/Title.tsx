@@ -47,7 +47,7 @@ const Title = () => {
       <div className="content">
         <h2>
           <span>DISCOVER GRANFORD</span> <br />
-          ABOUT US
+          ABOUT <span className="italic-text">US</span>
         </h2>
         <p>
           Introducing Granford, a furniture company whose history is rooted in

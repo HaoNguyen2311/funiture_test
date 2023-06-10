@@ -15,9 +15,9 @@ const OriginStandard = () => {
       <div className="origin">
         <div className="desc">
           <h2>
-            Curated Furniture that{" "}
-            <span className="text-base-gray">Elevates</span>{" "}
-            <span className="text-primary">& Inspires</span>
+            CURATED FURNITURE THAT{" "}
+            <span className="text-base-gray">ELEVATES</span>{" "}
+            <span className="text-primary">& INSPIRES</span>
           </h2>
           <p>
             At Granford, we are passionate about creating quality furniture that

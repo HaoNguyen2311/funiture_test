@@ -38,6 +38,7 @@
       line-height: 22px;
       letter-spacing: 0.03em;
       color: #414241;
+      font-family: var(--font-roboto);
     }
   }
   .image-section {
@@ -63,6 +64,7 @@
       line-height: 22px;
       letter-spacing: 0.03em;
       color: #414241;
+      font-family: var(--font-roboto);
     }
     .right-paragraph {
       h4 {
@@ -71,7 +73,7 @@
         line-height: 149px;
         letter-spacing: 0.02em;
         text-transform: uppercase;
-        color: #cfcfcf;
+        color: #414241;
         mix-blend-mode: difference;
       }
       span {
