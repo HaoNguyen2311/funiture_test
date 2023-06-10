@@ -17,7 +17,9 @@ const Footer = () => {
               <span>See for yourself.</span> Download our full catalog for a
               full look at our products and collections.
             </p>
-            <button>DOWNLOAD CATALOG</button>
+            <button>
+              <p>DOWNLOAD CATALOG</p>
+            </button>
           </div>
           <div className="contact-section">
             <div className="common-row">

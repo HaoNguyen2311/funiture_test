@@ -87,7 +87,6 @@
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: var(--white);
-
       mix-blend-mode: normal;
       margin-bottom: 32px;
       font-weight: 400;
@@ -105,13 +104,36 @@
       border-radius: 100px;
       background: transparent;
       margin-inline: auto;
-      color: var(--white);
       cursor: pointer;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-      letter-spacing: 0.1em;
+      position: relative;
+      p {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        z-index: 2;
+        margin-bottom: 0;
+        color: var(--white);
+        opacity: 1;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        transition: width 0.5s;
+        width: 0;
+        height: 100%;
+        background-color: var(--white);
+        border-radius: 100px;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        p {
+          color: var(--primary-gray);
+        }
+      }
     }
   }
 }

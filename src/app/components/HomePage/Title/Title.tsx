@@ -68,7 +68,9 @@ const Title = () => {
           REFINED FURNITURE <br />
           <span>REDEFINED</span>
         </h1>
-        <button>DISCOVER NOW</button>
+        <button>
+          <p>DISCOVER NOW</p>
+        </button>
       </div>
       <Slider className="slider-tab-items" {...settings}>
         {IMAGE_LIST.map((image, index) => (
