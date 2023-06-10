@@ -40,24 +40,19 @@
       }
     }
   }
-  .slider-title {
+  .slider-tab-items {
     .slick-slide {
       transition: transform 500ms ease-in-out;
       transform: scale(1);
       transition-delay: 300ms;
-      img {
-        height: 100vh;
-        object-fit: cover !important;
-        display: block !important;
-      }
     }
 
     .slick-prev {
       position: absolute;
-      left: 200px;
+      left: 122px;
       z-index: 1;
       color: var(--white);
-      font-size: 48px;
+      font-size: 28px;
       width: 80px;
       height: 80px;
       display: flex !important;
@@ -66,10 +61,10 @@
     }
     .slick-next {
       position: absolute;
-      right: 200px;
+      right: 122px;
       z-index: 1;
       color: var(--white);
-      font-size: 48px;
+      font-size: 28px;
       width: 80px;
       height: 80px;
       display: flex !important;
@@ -80,7 +75,7 @@
   .description {
     position: absolute;
     z-index: 1;
-    top: 70%;
+    top: 51%;
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
     width: 100%;
