@@ -1,0 +1,229 @@
+@import "@/app/styles/variable";
+
+.our-tactile-section {
+  margin-bottom: 182px;
+  p {
+    margin-bottom: 0;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  .common-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin-inline: auto;
+    gap: 50px;
+    .left-paragraph {
+      flex: 1;
+      position: relative;
+    }
+    .right-paragraph {
+      flex: 2.407;
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .our-approach {
+    margin-bottom: 248px;
+    padding-inline: 154px;
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+      color: #414241;
+    }
+  }
+  .image-section {
+    padding-left: 154px;
+    margin-bottom: 37px;
+
+    .left-paragraph {
+      display: flex;
+      flex: 0.9;
+      .line {
+        align-self: flex-end;
+      }
+    }
+    .right-paragraph {
+      flex: 2.6;
+    }
+  }
+  .our-leadership {
+    padding-inline: 154px;
+    .left-paragraph {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+      color: #414241;
+    }
+    .right-paragraph {
+      h4 {
+        font-weight: 300;
+        font-size: 109px;
+        line-height: 149px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #cfcfcf;
+        mix-blend-mode: difference;
+      }
+      span {
+        font-style: italic;
+      }
+      p {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        color: #414241;
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #4d4d4f;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+  }
+  h3 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #414241;
+    max-width: 1920px;
+    padding-inline: 152px;
+    margin-inline: auto;
+    margin-bottom: 29px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .our-tactile-section {
+    margin-bottom: 80px;
+    .our-approach {
+      margin-bottom: 80px;
+      padding-inline: 32px;
+      gap: 90px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .right-paragraph {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 20px;
+      }
+    }
+    .image-section {
+      padding-left: 32px;
+      margin-bottom: 40px;
+      .left-paragraph {
+        display: none;
+      }
+    }
+    .our-leadership {
+      padding-inline: 32px;
+      flex-direction: row-reverse;
+      gap: 73px;
+      .left-paragraph {
+        font-size: 14px;
+        line-height: 20px;
+        flex: 2.407;
+      }
+      .right-paragraph {
+        justify-content: unset;
+        gap: 8px;
+        flex: 1;
+        flex-direction: column-reverse;
+        h4 {
+          font-size: 32px;
+          line-height: 44px;
+          white-space: nowrap;
+        }
+        span {
+          font-style: italic;
+        }
+        p {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #4d4d4f;
+      align-self: flex-end;
+      position: absolute;
+      bottom: 0;
+    }
+    h3 {
+      padding-inline: 32px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-max) {
+  .our-tactile-section {
+    .our-approach {
+      padding-inline: 16px;
+      gap: 20px;
+      flex-direction: column;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .right-paragraph {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 20px;
+      }
+    }
+    .image-section {
+      padding-left: 16px;
+    }
+    .our-leadership {
+      padding-inline: 16px;
+      flex-direction: column-reverse;
+      gap: 16px;
+      text-align: center;
+      .left-paragraph {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .right-paragraph {
+        gap: 16px;
+        flex-direction: column;
+        h4 {
+          font-size: 32px;
+          line-height: 44px;
+          white-space: nowrap;
+        }
+        span {
+          font-style: italic;
+        }
+        p {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+    }
+    h3 {
+      padding-inline: 16px;
+    }
+  }
+}

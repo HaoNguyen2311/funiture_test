@@ -2,6 +2,7 @@
 
 .title-contact-us {
   padding-top: 273px;
+  margin-bottom: 63px;
   .content {
     max-width: 1920px;
     margin-inline: auto;
@@ -92,6 +93,7 @@
 @media screen and (max-width: $tablet-max) {
   .title-contact-us {
     padding-top: 112px;
+    margin-bottom: 40px;
     .content {
       padding-inline: 32px;
       margin-bottom: 32px;
@@ -156,6 +158,7 @@
 @media screen and (max-width: $phone-max) {
   .title-contact-us {
     padding-top: 80px;
+    margin-bottom: 40px;
     .content {
       padding-inline: 16px;
       margin-bottom: 40px;
