@@ -37,7 +37,7 @@
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.03em;
-      color: #414241;
+      color: var(--primary-gray);
       font-family: var(--font-roboto);
     }
   }
@@ -63,7 +63,7 @@
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.03em;
-      color: #414241;
+      color: var(--primary-gray);
       font-family: var(--font-roboto);
     }
     .right-paragraph {
@@ -73,7 +73,7 @@
         line-height: 149px;
         letter-spacing: 0.02em;
         text-transform: uppercase;
-        color: #414241;
+        color: var(--primary-gray);
         mix-blend-mode: difference;
       }
       span {
@@ -84,7 +84,7 @@
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.1em;
-        color: #414241;
+        color: var(--primary-gray);
       }
     }
   }
@@ -92,7 +92,7 @@
   .line {
     width: 100%;
     height: 1px;
-    background: #4d4d4f;
+    background: var(--second-gray);
     align-self: flex-end;
     position: absolute;
     bottom: 0;
@@ -102,7 +102,7 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.1em;
-    color: #414241;
+    color: var(--primary-gray);
     max-width: 1920px;
     padding-inline: 152px;
     margin-inline: auto;
@@ -167,7 +167,7 @@
     .line {
       width: 100%;
       height: 1px;
-      background: #4d4d4f;
+      background: var(--second-gray);
       align-self: flex-end;
       position: absolute;
       bottom: 0;

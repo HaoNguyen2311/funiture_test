@@ -25,7 +25,7 @@
         line-height: 53px;
         text-align: center;
         letter-spacing: 0.02em;
-        color: white;
+        color: var(--white);
       }
     }
     .progress-bar {
@@ -56,7 +56,7 @@
       position: absolute;
       left: 200px;
       z-index: 1;
-      color: white;
+      color: var(--white);
       font-size: 48px;
       width: 80px;
       height: 80px;
@@ -68,7 +68,7 @@
       position: absolute;
       right: 200px;
       z-index: 1;
-      color: white;
+      color: var(--white);
       font-size: 48px;
       width: 80px;
       height: 80px;
@@ -91,7 +91,8 @@
       text-align: center;
       letter-spacing: 0.02em;
       text-transform: uppercase;
-      color: #ffffff;
+      color: var(--white);
+
       mix-blend-mode: normal;
       margin-bottom: 32px;
       font-weight: 400;
@@ -109,7 +110,7 @@
       border-radius: 100px;
       background: transparent;
       margin-inline: auto;
-      color: white;
+      color: var(--white);
       cursor: pointer;
       font-weight: 800;
       font-size: 16px;

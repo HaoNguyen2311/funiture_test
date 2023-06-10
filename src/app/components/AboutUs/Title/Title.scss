@@ -16,7 +16,7 @@
       font-family: var(--font-roboto);
       line-height: 22px;
       letter-spacing: 0.03em;
-      color: #414241;
+      color: var(--primary-gray);
       margin-bottom: 20px;
       max-width: 386px;
       align-self: flex-end;
@@ -28,7 +28,7 @@
     line-height: 131px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #414241;
+    color: var(--primary-gray);
     margin-bottom: 0;
     .italic-text {
       font-style: italic;
@@ -37,7 +37,7 @@
       line-height: 131px;
       letter-spacing: 0.02em;
       text-transform: uppercase;
-      color: #414241;
+      color: var(--primary-gray);
     }
     span {
       font-weight: 500;
@@ -45,7 +45,7 @@
       line-height: 44px;
       letter-spacing: 0.01em;
       text-transform: uppercase;
-      color: #414241;
+      color: var(--primary-gray);
     }
   }
 
@@ -70,7 +70,7 @@
         line-height: 53px;
         text-align: center;
         letter-spacing: 0.02em;
-        color: white;
+        color: var(--white);
       }
     }
   }
@@ -112,7 +112,7 @@
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 0.03em;
-        color: #414241;
+        color: var(--primary-gray);
         margin-bottom: 20px;
         max-width: 386px;
         align-self: flex-end;

@@ -48,7 +48,7 @@
       display: flex !important;
       justify-content: center;
       align-items: center;
-      color: #4d4d4f;
+      color: var(--second-gray);
     }
     .slick-next {
       position: absolute;
@@ -60,7 +60,7 @@
       display: flex !important;
       justify-content: center;
       align-items: center;
-      color: #4d4d4f;
+      color: var(--second-gray);
     }
   }
 }
@@ -74,17 +74,17 @@
         line-height: 66px;
         text-align: center;
         letter-spacing: 0.01em;
-        color: #414241;
+        color: var(--primary-gray);
         opacity: 0.25;
       }
       .ant-tabs-tab-active {
         .ant-tabs-tab-btn {
-          color: #414241;
+          color: var(--primary-gray);
           opacity: 1;
         }
       }
       .ant-tabs-ink-bar {
-        background-color: #414241;
+        background-color: var(--primary-gray);
       }
     }
   }
@@ -107,7 +107,7 @@
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    color: #414241;
+    color: var(--primary-gray);
     opacity: 0.6;
     font-family: var(--font-roboto);
   }
@@ -170,12 +170,12 @@
         }
         .ant-tabs-tab-active {
           .ant-tabs-tab-btn {
-            color: #414241;
+            color: var(--primary-gray);
             opacity: 1;
           }
         }
         .ant-tabs-ink-bar {
-          background-color: #414241;
+          background-color: var(--primary-gray);
         }
       }
     }
@@ -236,12 +236,12 @@
         }
         .ant-tabs-tab-active {
           .ant-tabs-tab-btn {
-            color: #414241;
+            color: var(--primary-gray);
             opacity: 1;
           }
         }
         .ant-tabs-ink-bar {
-          background-color: #414241;
+          background-color: var(--primary-gray);
         }
       }
     }

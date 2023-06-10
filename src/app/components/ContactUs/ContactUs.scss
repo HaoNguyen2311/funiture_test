@@ -13,7 +13,7 @@
     font-size: 110px;
     line-height: 121px;
     letter-spacing: 0.01em;
-    color: #4d4d4f;
+    color: var(--second-gray);
     mix-blend-mode: normal;
     margin-bottom: 57px;
     span {
@@ -28,7 +28,7 @@
       font-size: 24px;
       line-height: 32px;
       letter-spacing: 0.03em;
-      color: #414241;
+      color: var(--primary-gray);
       margin-bottom: 0;
       font-family: var(--font-roboto);
     }
@@ -39,7 +39,7 @@
     .line {
       max-width: 519px;
       height: 1px;
-      background-color: #4d4d4f;
+      background-color: var(--second-gray);
       width: 100%;
     }
     .submit-btn {
@@ -59,7 +59,7 @@
         line-height: 22px;
         text-align: center;
         letter-spacing: 0.1em;
-        color: #414241;
+        color: var(--primary-gray);
       }
     }
     .discount-text {
@@ -67,7 +67,7 @@
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.03em;
-      color: #414241;
+      color: var(--primary-gray);
       margin-top: 24px;
       margin-bottom: 0;
       font-family: var(--font-roboto);
@@ -81,7 +81,7 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #414241;
+    color: var(--primary-gray);
   }
   ::placeholder {
     font-weight: 800;
@@ -90,7 +90,7 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #414241;
+    color: var(--primary-gray);
     text-align: left;
   }
 }

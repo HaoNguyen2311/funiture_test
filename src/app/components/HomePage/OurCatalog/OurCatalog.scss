@@ -11,7 +11,7 @@
     .line {
       height: 72px;
       width: 1px;
-      background: #414241;
+      background: var(--primary-gray);
       margin-bottom: 40px;
     }
   }
@@ -25,7 +25,7 @@
       line-height: 98px;
       text-align: center;
       letter-spacing: 0.01em;
-      color: #ffffff;
+      color: var(--white);
     }
     img {
       max-width: 522px;
@@ -40,7 +40,7 @@
     text-align: center;
     letter-spacing: 0.01em;
     margin-bottom: 48px;
-    color: #414241;
+    color: var(--primary-gray);
     max-width: 797px;
     span {
       color: #b9a38a;
@@ -58,7 +58,7 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #414241;
+    color: var(--primary-gray);
     margin-bottom: 192px;
     font-family: var(--font-roboto);
   }
@@ -68,7 +68,7 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #414241;
+    color: var(--primary-gray);
     margin-bottom: 24px;
   }
 }
