@@ -95,7 +95,7 @@ const Header = ({ isTransparent }: { isTransparent: boolean }) => {
           width={"100%"}
         >
           <div className="navigate-section">
-            <a href="">ABOUT US</a>
+            <a href="/about-us">ABOUT US</a>
             <a href="">CONTACT US</a>
             <a href="">DOWNLOAD CATALOG</a>
           </div>
