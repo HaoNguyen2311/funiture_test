@@ -1,7 +1,8 @@
 import Image from "next/image";
-import "./ContactUs.scss";
 
 import ArrowImage from "@public/arrow-narrow-right.svg";
+
+import "./ContactUs.scss";
 
 const ContactUs = () => {
   return (

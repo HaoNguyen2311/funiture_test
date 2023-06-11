@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import CeoImage from "@public/AboutUs/CEO_image.png";
 import CcoImage from "@public/AboutUs/CCO_image.png";
 import CtoImage from "@public/AboutUs/CTO_image.png";
@@ -5,7 +7,6 @@ import SaleImage from "@public/AboutUs/sale_image.jpg";
 import BusinessImage from "@public/AboutUs/business_image.png";
 
 import "./OurMembers.scss";
-import Image from "next/image";
 
 const MEMBER_LIST = [
   {

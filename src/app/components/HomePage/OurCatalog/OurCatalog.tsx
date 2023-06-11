@@ -1,9 +1,9 @@
-import TabList from "./TabList/TabList";
+import Image from "next/image";
 
+import TabList from "./TabList/TabList";
 import MainImage from "@public/OurCatalog/our_catalog_image.png";
 
 import "./OurCatalog.scss";
-import Image from "next/image";
 
 const TabItems = () => {
   return (

@@ -7,12 +7,12 @@ import {
   CloseOutlined,
   PhoneFilled,
 } from "@ant-design/icons";
+import Link from "next/link";
 
 import LogoImage from "@public/logo_image.svg";
 import LogoImageBlack from "@public/logo_image_black.svg";
 
 import "./Header.scss";
-import Link from "next/link";
 
 const debounce = (func: () => void, delay: number) => {
   let timeoutId: undefined | ReturnType<typeof setTimeout> = undefined;
