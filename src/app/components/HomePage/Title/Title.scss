@@ -46,6 +46,10 @@
       transform: scale(1);
       transition-delay: 300ms;
     }
+    img {
+      width: 100%;
+      height: 100vh;
+    }
 
     .slick-prev {
       position: absolute;
